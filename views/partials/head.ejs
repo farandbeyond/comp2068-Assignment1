@@ -9,10 +9,10 @@
 <body>
 <nav>
     <ul class="navbar">
-        <li class="mainNav"><a href="/">Index</a></li>
-        <li class="mainNav"><a href="/">__</a></li>
-        <li class="mainNav"><a href="/">__</a></li>
-        <li class="mainNav"><a href="/">__</a></li>
-        <li class="mainNav"><a href="/">__</a></li>
+        <li <% if(pageNum==1){ %>class="active"<%}%> ><a href="/">Index</a></li>
+        <li <% if(pageNum==2){ %>class="active"<%}%> ><a href="/aboutme">About Me</a></li>
+        <li <% if(pageNum==3){ %>class="active"<%}%> ><a href="/">__</a></li>
+        <li <% if(pageNum==4){ %>class="active"<%}%> ><a href="/">__</a></li>
+        <li <% if(pageNum==5){ %>class="active"<%}%> ><a href="/">__</a></li>
     </ul>
 </nav>

@@ -24,6 +24,9 @@ ul.navbar li {
     display: inline;
     float: left;
 }
+ul.navbar li.active{
+    background-color: aqua;
+}
 
 ul.navbar li a {
     display: block;
