@@ -1,12 +1,19 @@
 
 /* defaults from  express */
 body {
-    padding: 50px;
+    /*padding: 50px;*/
+    margin:0px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+div.afterNav{
+    margin-left: 10px;
 }
 
 a {
     color: #00B7FF;
+}
+.inline{
+    display: inline;
 }
 
 
@@ -44,16 +51,28 @@ li a:hover {
 table.projectList{
     border: solid 2px black;
 }
-
 table.projectList td{
     border: solid 1px black;
     padding-left: 10px;
     padding-right: 20px;
 }
-
 table.projectList tr.columnHeads{
     text-align: center;
     font-weight: bold;
+}
+/* contact form in contact.ejs */
+form.contact{
+    max-width: 500px;
+    border: solid black 1px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+form.contact p{
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+form.contact textarea{
+    max-width: 390px;
 }
 
 

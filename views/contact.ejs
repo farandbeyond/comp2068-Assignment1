@@ -1,0 +1,19 @@
+<%- include partials/head.ejs %>
+<h1 class="title"><%= title %></h1>
+
+
+<form method="post" class = "contact">
+    <p>Your Name:</p>
+    <input type="text" name="contactName">
+    <p>Your Email:</p>
+    <input type="text" name="contactEmail">
+    <p>Your Subject:</p>
+    <input type="text" name="contactEmailSubject">
+    <p>Your Message:</p>
+    <textarea name="contactEmailBody"> </textarea><br>
+
+    <p class="inline">Submit</p>
+<!--    <input type="submit" value="Send" >  Submit button causes a 404 error. to be fixed later-->
+    <input type="reset" value="Clear">
+</form>
+<%- include partials/foot.ejs %>
