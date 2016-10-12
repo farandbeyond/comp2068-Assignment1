@@ -42,7 +42,6 @@ li a:hover {
 }
 /* Table in projects.ejs */
 table.projectList{
-
     border: solid 2px black;
 }
 
