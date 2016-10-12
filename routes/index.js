@@ -8,7 +8,15 @@ router.get('/', function(req, res, next) {
     title: 'Homepage'
   });
 });
+/* about me page*/
+router.get('/aboutme', function(req, res, next) {
+  res.render('aboutme', {
+    pageNum: 2,
+    title: 'About Me'
+  });
+});
 
+/* projects page*/
 router.get('/projects', function(req, res, next) {
   var projNames = ['Blackwind 1.0','Blackwind 2.0','Blackwind 3.0','Gunblade'];
   var projDescription = ['A turn based RPG','Remake of Blackwind 1.0','Remake of Blackwind 2.0','A grid based puzzle game'];
@@ -24,6 +32,7 @@ router.get('/projects', function(req, res, next) {
   });
 });
 
+/* services page*/
 router.get('/services', function(req,res,next){
   res.render('services',{
     pageNum: 4,
@@ -32,6 +41,7 @@ router.get('/services', function(req,res,next){
 });
 
 
+/* contact form page*/
 router.get('/contact', function(req,res,next){
   res.render('contact', {
     pageNum: 5,

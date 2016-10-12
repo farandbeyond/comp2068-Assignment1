@@ -5,22 +5,25 @@ body {
     margin:0px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-div.afterNav{
-    margin-left: 10px;
+/* Global */
+h1.title{
+    display: flex;
 }
-
 a {
     color: #00B7FF;
 }
 .inline{
     display: inline;
 }
-
-
 html{
     background-color: #00B7FF;
 }
-
+footer{
+    padding-top: 20px;
+}
+div.afterNav{
+    margin-left: 10px;
+}
 /* Navbar in partials/head.ejs*/
 ul.navbar {
     list-style-type: none;
@@ -44,7 +47,7 @@ ul.navbar li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover {
+ul.navbar li a:hover {
     background-color: #111;
 }
 /* Table in projects.ejs */
@@ -74,9 +77,33 @@ form.contact p{
 form.contact textarea{
     max-width: 390px;
 }
+/* Footer link list in partial/foot.ejs */
+footer a{
+    display: inline;
+    color: #b12;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
 
-
-/* Global */
-h1.title{
-    display: flex;
 }
+footer li{
+    padding-bottom: 10px;
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+footer ul p{
+    display: inline;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
